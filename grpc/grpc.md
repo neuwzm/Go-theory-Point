@@ -10,3 +10,13 @@ Bidirectional streaming RPCs where both sides send a sequence of messages using 
 
 
 
+Synchronous vs. asynchronous
+
+Synchronous RPC calls that block until a response arrives from the server are the closest approximation to the abstraction of a procedure call that RPC aspires to. On the other hand, networks are inherently asynchronous and in many scenarios it’s useful to be able to start RPCs without blocking the current thread.
+
+同步与异步
+
+在响应从服务器到达之前阻塞的同步RPC调用最接近RPC所期望的过程调用的抽象。 另一方面，网络本质上是异步的，在许多情况下，能够在不阻塞当前线程的情况下启动RPC非常有用。
+
+
+
